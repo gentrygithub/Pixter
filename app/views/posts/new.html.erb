@@ -1,0 +1,12 @@
+<div class="private-square span4 offset4 text-center">
+  <h1> Upload Image of your choice </h1>
+  <br/>
+  
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title, label:'Whats your name', placeholder: 'eg. Tommy,Cheri,Norman' %>
+  <br/>
+  <%= f.input :description, label: 'What is this picture about', placeholder: 'This is Tommy creating apps' %>
+  <br/>
+  <%= f.button :submit, :class => 'btn btn-success' %>
+  <% end %>
+</div>
